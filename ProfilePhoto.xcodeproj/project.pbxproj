@@ -76,6 +76,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE2B7B63244A4C3B00A36755 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE2B7B64244A4C4A00A36755 /* HTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HTTPRequest;
+			sourceTree = "<group>";
+		};
+		AE2B7B65244A4C5600A36755 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AE2B7B66244A4C6100A36755 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		AEE12BAD244A498F0048BD10 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +127,10 @@
 		AEE12BB8244A498F0048BD10 /* ProfilePhoto */ = {
 			isa = PBXGroup;
 			children = (
+				AE2B7B66244A4C6100A36755 /* Controller */,
+				AE2B7B65244A4C5600A36755 /* Service */,
+				AE2B7B64244A4C4A00A36755 /* HTTPRequest */,
+				AE2B7B63244A4C3B00A36755 /* Model */,
 				AEE12BB9244A498F0048BD10 /* AppDelegate.swift */,
 				AEE12BBB244A498F0048BD10 /* SceneDelegate.swift */,
 				AEE12BBD244A498F0048BD10 /* ViewController.swift */,
