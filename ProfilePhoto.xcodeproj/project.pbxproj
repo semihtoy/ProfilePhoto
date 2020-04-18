@@ -13,10 +13,10 @@
 		AE98BE01244ACDAE00B8998F /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE00244ACDAE00B8998F /* HTTPRequest.swift */; };
 		AE98BE03244ACEDA00B8998F /* ServiceBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE02244ACEDA00B8998F /* ServiceBase.swift */; };
 		AE98BE05244AD0B700B8998F /* ProfilePhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE04244AD0B700B8998F /* ProfilePhotoService.swift */; };
-		AE98BE0D244AD27E00B8998F /* links.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE06244AD27D00B8998F /* links.swift */; };
+		AE98BE0D244AD27E00B8998F /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE06244AD27D00B8998F /* Links.swift */; };
 		AE98BE0E244AD27E00B8998F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE07244AD27E00B8998F /* Profile.swift */; };
 		AE98BE0F244AD27E00B8998F /* SelfLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE08244AD27E00B8998F /* SelfLink.swift */; };
-		AE98BE10244AD27E00B8998F /* meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE09244AD27E00B8998F /* meta.swift */; };
+		AE98BE10244AD27E00B8998F /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE09244AD27E00B8998F /* Meta.swift */; };
 		AE98BE11244AD27E00B8998F /* RateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE0A244AD27E00B8998F /* RateLimit.swift */; };
 		AE98BE12244AD27E00B8998F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE0B244AD27E00B8998F /* Result.swift */; };
 		AE98BE13244AD27E00B8998F /* Edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98BE0C244AD27E00B8998F /* Edit.swift */; };
@@ -56,10 +56,10 @@
 		AE98BE00244ACDAE00B8998F /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		AE98BE02244ACEDA00B8998F /* ServiceBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceBase.swift; sourceTree = "<group>"; };
 		AE98BE04244AD0B700B8998F /* ProfilePhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoService.swift; sourceTree = "<group>"; };
-		AE98BE06244AD27D00B8998F /* links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = links.swift; sourceTree = "<group>"; };
+		AE98BE06244AD27D00B8998F /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		AE98BE07244AD27E00B8998F /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		AE98BE08244AD27E00B8998F /* SelfLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfLink.swift; sourceTree = "<group>"; };
-		AE98BE09244AD27E00B8998F /* meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = meta.swift; sourceTree = "<group>"; };
+		AE98BE09244AD27E00B8998F /* Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
 		AE98BE0A244AD27E00B8998F /* RateLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateLimit.swift; sourceTree = "<group>"; };
 		AE98BE0B244AD27E00B8998F /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AE98BE0C244AD27E00B8998F /* Edit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edit.swift; sourceTree = "<group>"; };
@@ -126,8 +126,8 @@
 		AE2B7B63244A4C3B00A36755 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AE98BE06244AD27D00B8998F /* links.swift */,
-				AE98BE09244AD27E00B8998F /* meta.swift */,
+				AE98BE06244AD27D00B8998F /* Links.swift */,
+				AE98BE09244AD27E00B8998F /* Meta.swift */,
 				AE98BE0C244AD27E00B8998F /* Edit.swift */,
 				AE98BE07244AD27E00B8998F /* Profile.swift */,
 				AE98BE0A244AD27E00B8998F /* RateLimit.swift */,
@@ -486,13 +486,13 @@
 				AE98BE03244ACEDA00B8998F /* ServiceBase.swift in Sources */,
 				AE98BE11244AD27E00B8998F /* RateLimit.swift in Sources */,
 				AE98BE01244ACDAE00B8998F /* HTTPRequest.swift in Sources */,
-				AE98BE0D244AD27E00B8998F /* links.swift in Sources */,
+				AE98BE0D244AD27E00B8998F /* Links.swift in Sources */,
 				AE98BE12244AD27E00B8998F /* Result.swift in Sources */,
 				AE98BE0E244AD27E00B8998F /* Profile.swift in Sources */,
 				AEE12BBA244A498F0048BD10 /* AppDelegate.swift in Sources */,
 				AE98BE16244AEAD300B8998F /* CustomTableViewCell.swift in Sources */,
 				AE98BE0F244AD27E00B8998F /* SelfLink.swift in Sources */,
-				AE98BE10244AD27E00B8998F /* meta.swift in Sources */,
+				AE98BE10244AD27E00B8998F /* Meta.swift in Sources */,
 				AEE12BBC244A498F0048BD10 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
