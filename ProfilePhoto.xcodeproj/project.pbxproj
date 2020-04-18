@@ -157,8 +157,8 @@
 		AE2B7B66244A4C6100A36755 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AE98BE14244AEAB000B8998F /* Cell */,
 				AEE12BBD244A498F0048BD10 /* ViewController.swift */,
+				AE98BE14244AEAB000B8998F /* Cell */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
