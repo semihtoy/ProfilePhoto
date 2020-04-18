@@ -22,7 +22,7 @@ class CustomTableViewCell: UITableViewCell {
     }()
     lazy var title : UILabel = {
         let title = UILabel(frame: CGRect(x: 116, y: 8, width: backView.frame.width - 116, height: 100))
-       // title.textAlignment = .left
+        title.textAlignment = .left
         title.numberOfLines = 0
         title.lineBreakMode = .byWordWrapping
         title.font = UIFont.boldSystemFont(ofSize: 18)
