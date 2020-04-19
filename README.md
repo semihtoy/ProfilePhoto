@@ -27,5 +27,5 @@ The layer that interacts directly with the user.
 
 ## Information 
 
-I have this error in application and some image doesnt display. This error are from server
+I have this error in application and some image doesnt display. This error are from server.
 Console output "NSLocalizedDescription=Could not connect to the server."
