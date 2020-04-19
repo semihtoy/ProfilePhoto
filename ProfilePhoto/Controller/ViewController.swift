@@ -7,6 +7,8 @@
 //
 import UIKit
 import Kingfisher
+import Alamofire
+import AlamofireImage
 class ViewController: UIViewController{
     var _profilePhoto = ProfilePhotoService()
     var _links : Links?
@@ -36,18 +38,26 @@ class ViewController: UIViewController{
 }
 extension ViewController : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return photoArray.count
+        return _result!.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as?
             CustomTableViewCell else { return UITableViewCell() }
-        if let imageURL = URL(string: self._result![indexPath.row].thumbnail!) {
-            DispatchQueue.global().async {
-                let data = try? Data(contentsOf: imageURL)
-                if let data = data {
-                    let image = UIImage(data: data)
-                    DispatchQueue.main.async {
-                        cell.photoImages.image = image                        
+        DispatchQueue.global().async {
+            let imageDownloader = ImageDownloader(
+                configuration: ImageDownloader.defaultURLSessionConfiguration(),
+                downloadPrioritization: .fifo,
+                maximumActiveDownloads: 1,
+                imageCache: AutoPurgingImageCache()
+            )
+            DispatchQueue.main.async {
+                let downloader = ImageDownloader()
+                let urlRequest = URLRequest(url: URL(string: self._result![indexPath.row].thumbnail!)!)
+                downloader.download(urlRequest) { response in
+                    debugPrint(response.result)
+                    if case .success(let image) = response.result {
+                        cell.photoImages.image = image
+                        print(image)
                     }
                 }
             }

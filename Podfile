@@ -6,8 +6,9 @@ target 'ProfilePhoto' do
   use_frameworks!
 
   # Pods for ProfilePhoto
-pod 'Alamofire', '~> 5.0'
-pod 'Kingfisher', '~> 5.0'
+pod 'Alamofire' 
+pod 'Kingfisher'
+pod 'AlamofireImage'
 
   target 'ProfilePhotoTests' do
     inherit! :search_paths
