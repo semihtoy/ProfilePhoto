@@ -24,3 +24,4 @@ The layer that interacts directly with the user.
 #Library
 1. [Alomofire](https://github.com/Alamofire/Alamofire) (For Network).
 2. [KingFisher](https://github.com/onevcat/Kingfisher) (Image download and caching).
+3. [AlamofireImage](https://github.com/Alamofire/AlamofireImage) (Image download and caching).
