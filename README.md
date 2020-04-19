@@ -14,11 +14,7 @@ The layer that interacts directly with the user.
 # Screenshots
 
 #### Profile Screen
-![ProfilePhoto](https://user-images.githubusercontent.com/43500888/79662128-294dfb80-81bd-11ea-9133-0aad0b76424e.jpeg)
-
-
-
-
+![Profile](https://user-images.githubusercontent.com/43500888/79683970-85089b00-8236-11ea-8212-95c35093c43f.jpeg)
 
 ## Installation
 
