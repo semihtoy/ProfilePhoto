@@ -23,5 +23,9 @@ The layer that interacts directly with the user.
 
 #Library
 1. [Alomofire](https://github.com/Alamofire/Alamofire) (For Network).
-2. [KingFisher](https://github.com/onevcat/Kingfisher) (Image download and caching).
 3. [AlamofireImage](https://github.com/Alamofire/AlamofireImage) (Image download and caching).
+
+## Information 
+
+I have this error in application and some image doesnt display. This error are from server
+Console output "NSLocalizedDescription=Could not connect to the server."
